@@ -1,0 +1,11 @@
+C:\Users\martijn\source\repos\Direct.SMTP.Library\Project\obj\Debug\Direct.SMTP.Library.csprojAssemblyReference.cache
+C:\Users\martijn\source\repos\Direct.SMTP.Library\Project\bin\Debug\Direct.SMTP.Library.dll
+C:\Users\martijn\source\repos\Direct.SMTP.Library\Project\bin\Debug\Direct.SMTP.Library.pdb
+C:\Users\martijn\source\repos\Direct.SMTP.Library\Project\bin\Debug\Direct.Interface.dll
+C:\Users\martijn\source\repos\Direct.SMTP.Library\Project\bin\Debug\Direct.Shared.dll
+C:\Users\martijn\source\repos\Direct.SMTP.Library\Project\bin\Debug\log4net.dll
+C:\Users\martijn\source\repos\Direct.SMTP.Library\Project\bin\Debug\Microsoft.mshtml.dll
+C:\Users\martijn\source\repos\Direct.SMTP.Library\Project\bin\Debug\Newtonsoft.Json.dll
+C:\Users\martijn\source\repos\Direct.SMTP.Library\Project\obj\Debug\Direct.SMTP.Library.csproj.CopyComplete
+C:\Users\martijn\source\repos\Direct.SMTP.Library\Project\obj\Debug\Direct.SMTP.Library.dll
+C:\Users\martijn\source\repos\Direct.SMTP.Library\Project\obj\Debug\Direct.SMTP.Library.pdb

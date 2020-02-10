@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="dproj_IpJaYEViGTAHnPE8JkEiJA.Default.css" xml:space="preserve">
+    <value>body { font-family: arial, calibri, verdana, sans-serif; color: #484848; font-size: 0.8em;padding: 5px}   
+p {margin: 5px 0px 5px 0;}
+a, a:hover  {color:#1F478C;}   
+a:hover{ color:#8caf38;} 
+
+
+/*---------- Title &amp; Fonts ----------*/
+.remark { color: #484848; font-size: 8pt; }
+
+.title1 { font-size: 1.4em; font-weight:normal;margin: 5px 0 20px 0;color:#1F478C;}  
+.title2 { font-size: 1.3em; font-weight:bold; margin: 5px 0 20px 0;color:#1F478C;}  
+.title3 { font-size: 1.2em; font-weight:bold; margin: 5px 0 20px 0;color:#1F478C;}  
+
+    
+/*-------------Table Styles ------------*/
+table {border:1px solid #B5CFE5;;border-collapse:collapse;margin: 5px 3px 5px 0; }
+table th, table td {padding: 8px 3px 8px 3px;  }  
+table td { background: #EFF8FF;  border:1px solid #B5CFE5; }
+ 
+table th,  .columnHeader { text-align: left;  font-weight: bold;  color: #fff;
+  background: #9AB8D5;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9AB8D5', endColorstr='#6794BC');
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9AB8D5', endColorstr='#6794BC');
+  background: -ms-linear-gradient(top, #9AB8D5 0%, #6794BC 100%);
+  background: -moz-linear-gradient(top, #9AB8D5 0%, #6794BC 100%);
+  background: -o-linear-gradient(top, #9AB8D5 0%, #6794BC 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #9AB8D5), color-stop(1, #6794BC));
+  background: -webkit-linear-gradient(top, #9AB8D5 0%, #6794BC 100%);
+  background: linear-gradient(top, #9AB8D5 0%, #6794BC 100%);  
+ } 
+
+ 
+/*-------------Form Styles ------------*/
+ textarea, select, input, button, iframe {margin: 5px 3px 5px 0; vertical-align: middle }
+ 
+textarea, input[type="text"]  {
+border: 1px solid #B5CFE5;
+color: #484848; 
+ font-size: 1em;
+  padding: 2px 0 2px 5px;
+  border-radius: 3px;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+  background: #EFF8FF;
+  }
+
+select, option {width: 200px;height: 25px;color: #484848; 
+ font-size: 1em;
+  padding: 2px 0 2px 5px;
+  border: 1px solid #B5CFE5;
+  background: #EFF8FF;
+  border-radius: 3px;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ }
+
+textarea {  border: 1px solid #B5CFE5;height: 50px; width: 200px; font-family: arial, calibri, verdana, sans-serif; color: #484848; font-size: 1em; } 
+
+button {padding: 3px 20px;margin:5px 5px 5px 0;
+  color: #fff;
+  font-weight: bold;
+  border:1px solid #6491B7;
+  background: #6491B7;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9AB8D5', endColorstr='#6491B7');
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9AB8D5', endColorstr='#6491B7');
+  background: -ms-linear-gradient(top, #9AB8D5 0%, #6491B7 100%);
+  background: -moz-linear-gradient(top, #9AB8D5 0%, #6491B7 100%);
+  background: -o-linear-gradient(top, #9AB8D5 0%, #6491B7 100%);  
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #9AB8D5), color-stop(1, #6491B7));
+  background: -webkit-linear-gradient(top, #9AB8D5 0%, #6491B7 100%);
+  background: linear-gradient(top, #9AB8D5 0%, #6491B7 100%);  
+  cursor:pointer;  
+ border-radius: 5px;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ }
+ 
+button:hover {
+  background: #6491B7;
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6491B7', endColorstr='#9AB8D5');
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6491B7', endColorstr='#9AB8D5');
+  background: -ms-linear-gradient(top, #6491B7 0%, #9AB8D5 100%);
+  background: -moz-linear-gradient(top, #6491B7 0%, #9AB8D5 100%);
+  background: -o-linear-gradient(top, #6491B7 0%, #9AB8D5 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #6491B7), color-stop(1, #9AB8D5));
+  background: -webkit-linear-gradient(top, #6491B7 0%, #9AB8D5 100%);
+  background: linear-gradient(top, #6491B7 0%, #9AB8D5 100%);  
+ }
+ 
+ iframe { filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F4FAFF', endColorstr='#ffffff');
+ -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F4FAFF', endColorstr='#ffffff'); 
+   background: -ms-linear-gradient(top, #F4FAFF 0%, #fff 30%);
+  background: -moz-linear-gradient(top, #F4FAFF 0%, #fff 30%);
+  background: -o-linear-gradient(top, #F4FAFF 0%, #fff 30%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F4FAFF), color-stop(0.3, #fff));
+  background: -webkit-linear-gradient(top, #F4FAFF 0%, #fff 30%);
+  background: linear-gradient(top, #F4FAFF 0%, #fff 30%);
+  border-radius: 3px;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ border:2px solid #6694BB;padding:3px }
+ 
+ 
+ img {vertical-align:middle;}
+ 
+ 
+ 
+     
+/*-------------Calendar Styles ------------*/
+.CalendarWrapper {border:2px solid #EFF4F7; padding:10px; }
+.CalendarDay {font-size:0.9em;padding: 5px;border:1px solid  #6694BB;}
+.CalendarDisabled {font-size:0.9em;padding: 5px;border:1px solid  #6694BB;color:#8F9297}
+
+.CalendarToday { width: 30px;font-size:0.9em;padding: 5px;border:1px solid  #6694BB;background: #CDE2A0;
+  background: -ms-linear-gradient(top, #E4F9B7 0%, #BED390 100%);
+  background: -moz-linear-gradient(top, #E4F9B7 0%, #BED390 100%);
+  background: -o-linear-gradient(top, #E4F9B7 0%, #BED390 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #E4F9B7), color-stop(1, #BED390));
+  background: -webkit-linear-gradient(top, #E4F9B7 0%, #BED390 100%);
+  background: linear-gradient(top, #E4F9B7 0%, #BED390 100%);
+  border:1px solid #94ACD7     }
+      
+.CalendarToday:hover { 
+background: #CDE2A0;
+  background: -ms-linear-gradient(top, #9EB4DB 0%, #EAEEF7 100%);
+  background: -moz-linear-gradient(top, #9EB4DB 0%, #EAEEF7 100%);
+  background: -o-linear-gradient(top, #9EB4DB 0%, #EAEEF7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #9EB4DB), color-stop(1, #EAEEF7));
+  background: -webkit-linear-gradient(top, #9EB4DB 0%, #EAEEF7 100%);
+  background: linear-gradient(top, #9EB4DB 0%, #EAEEF7 100%);
+  border:1px solid #94ACD7  
+   }      
+</value>
+  </data>
+  <data name="callout1_rM6W.Html" xml:space="preserve">
+    <value>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;&lt;script src="{{InstallDir}}/Resources/Scripts/jquery-1.11.1.js"&gt;&lt;/script&gt;
+    &lt;script src="{{InstallDir}}/Resources/Scripts/jquery-1.12.4.js"&gt;&lt;/script&gt;
+    &lt;link rel="stylesheet" type="text/css" href="{{InstallDir}}/Resources/Scripts/jquery-ui.css" /&gt;
+    &lt;script src="{{InstallDir}}/Resources/Scripts/jquery-ui.js"&gt;&lt;/script&gt;
+    &lt;link rel="stylesheet" type="text/css" href="direct:dproj_IpJaYEViGTAHnPE8JkEiJA.Default.css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;
+        &lt;table style="FONT-SIZE: 12px" cols="2" align="left" border="1"&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;th colspan="2"&gt;
+                        SMTP Settings
+&lt;/th&gt;
+&lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td align="right"&gt;Host/Server Name:
+&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;input datasrc="#egdso.FQN:$Project.M24_YFZa" id="assignmentId1" datafld="M5_vFx5" bounded="true" /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td align="right"&gt;Port(number):
+&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;input datasrc="#egdso.FQN:$Project.M24_YFZa" id="assignmentId2" datafld="M6_S5JA" bounded="true" /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td align="right"&gt;UserName:&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;input datasrc="#egdso.FQN:$Project.M24_YFZa" id="assignmentId3" datafld="M7_Jilk" bounded="true" /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td align="right"&gt;Password:&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;input datasrc="#egdso.FQN:$Project.M24_YFZa" id="assignmentId4" datafld="M8_k7KT" bounded="true" /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td align="right"&gt;Enable SLL (bool):&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;input datasrc="#egdso.FQN:$Project.M24_YFZa" id="assignmentId5" datafld="M9_YSo7" bounded="true" /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/p&gt;
+    &lt;p&gt;
+        &lt;table style="FONT-SIZE: 12px" cols="2" border="1"&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;th colspan="2"&gt;
+                        Email Settings
+&lt;/th&gt;
+&lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td align="right"&gt;From:&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;input datasrc="#egdso.FQN:$Project.M23_TMrr" id="assignmentId6" datafld="M12_AJTd" bounded="true" /&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td align="right"&gt;To:&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;input datasrc="#egdso.FQN:$Project.M23_TMrr" id="assignmentId7" datafld="M13_cVCs" bounded="true" /&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td align="right"&gt;CC(opt):&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;input datasrc="#egdso.FQN:$Project.M23_TMrr" id="assignmentId8" datafld="M14_Jjfy" bounded="true" /&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td align="right"&gt;BCC (opt):&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;input datasrc="#egdso.FQN:$Project.M23_TMrr" id="assignmentId9" datafld="M18_MNxX" bounded="true" /&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td align="right"&gt;Subject:&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;input datasrc="#egdso.FQN:$Project.M23_TMrr" id="assignmentId10" datafld="M11_ONPL" bounded="true" /&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td align="right"&gt;Attachments (path - opt):&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;input datasrc="#egdso.FQN:$Project.M23_TMrr" id="assignmentId11" datafld="M22_ESFC" bounded="true" /&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td align="right"&gt;Body:&lt;/td&gt;
+                    &lt;td&gt;&lt;textarea datasrc="#egdso.FQN:$Project.M23_TMrr" id="assignmentId12" datafld="M20_lM7u" bounded="true"&gt;&lt;/textarea&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td align="right"&gt;Is Body HTML (bool):&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;input datasrc="#egdso.FQN:$Project.M23_TMrr" id="assignmentId13" datafld="M21_w3MA" bounded="true" /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/p&gt;
+    &lt;p&gt;&amp;nbsp;
+&lt;/p&gt;
+    &lt;p align="right"&gt;&lt;button onclick="javascript:window.invoke('assignmentId14')" id="assignmentId14"&gt;
+        &lt;div align="center"&gt;Send Email
+&lt;/div&gt;&lt;/button&gt;&amp;nbsp;
+&lt;/p&gt;
+&lt;script id="actions" type="text/json"&gt;{"actions":[{"name":"assignmentId14","display":"New Callout","method":"New Callout Action Link","type":"SMTP Example","project":"dproj_IpJaYEViGTAHnPE8JkEiJA","mm":"![CDATA[&lt;method name=\"M26_vKU4\" parameterCount=\"0\"&gt;&lt;fqn&gt;$Project&lt;/fqn&gt;&lt;/method&gt;]]"}]}&lt;/script&gt;&lt;/body&gt;
+&lt;/html&gt;
+</value>
+  </data>
+</root>
