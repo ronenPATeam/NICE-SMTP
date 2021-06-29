@@ -51,63 +51,64 @@ namespace Direct.SMTP.Library
                 client.Credentials = new System.Net.NetworkCredential(msg.UserName, msg.Password);
             }
 
-            //Email Message Properties 
-            MailMessage mm = new MailMessage();
-
-            mm.BodyEncoding = System.Text.UTF8Encoding.UTF8;
-            mm.Sender = new System.Net.Mail.MailAddress(msg.Sender);
-            mm.Body = msg.Body;
-            mm.From = new System.Net.Mail.MailAddress(msg.Sender);
-            mm.IsBodyHtml = msg.isHtml;
-            mm.Subject = msg.Subject;
-            mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
-
-            //Adding Recipients and CC list
-            MailAddressCollection tos = new MailAddressCollection();
-            foreach (string addr in msg.Recipients)
+            //Email Message Properties
+            using (MailMessage mm = new MailMessage())
             {
-                if (logArchitect.IsDebugEnabled)
+                mm.BodyEncoding = System.Text.UTF8Encoding.UTF8;
+                mm.Sender = new System.Net.Mail.MailAddress(msg.Sender);
+                mm.Body = msg.Body;
+                mm.From = new System.Net.Mail.MailAddress(msg.Sender);
+                mm.IsBodyHtml = msg.isHtml;
+                mm.Subject = msg.Subject;
+                mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
+
+                //Adding Recipients and CC list
+                MailAddressCollection tos = new MailAddressCollection();
+                foreach (string addr in msg.Recipients)
                 {
+                    if (logArchitect.IsDebugEnabled)
+                    {
+                        logArchitect.DebugFormat("SMTP Library - attempting to add address {0}", addr);
+                    }
+                    mm.To.Add(addr);
                     logArchitect.DebugFormat("SMTP Library - attempting to add address {0}", addr);
                 }
-                mm.To.Add(addr);
-                logArchitect.DebugFormat("SMTP Library - attempting to add address {0}", addr);
-            }
-            MailAddressCollection tosCC = new MailAddressCollection();
-            foreach (string addr in msg.RecipientsCC)
-            {
-                if (logArchitect.IsDebugEnabled)
+                MailAddressCollection tosCC = new MailAddressCollection();
+                foreach (string addr in msg.RecipientsCC)
                 {
+                    if (logArchitect.IsDebugEnabled)
+                    {
+                        logArchitect.DebugFormat("SMTP Library - attempting to add addressCC {0}", addr);
+                    }
+                    mm.CC.Add(addr);
                     logArchitect.DebugFormat("SMTP Library - attempting to add addressCC {0}", addr);
                 }
-                mm.CC.Add(addr);
-                logArchitect.DebugFormat("SMTP Library - attempting to add addressCC {0}", addr);
-            }
 
-            //Adding attachemets
-            foreach (string att in msg.Attachements)
-            {
-                if (logArchitect.IsDebugEnabled)
+                //Adding attachemets
+                foreach (string att in msg.Attachements)
                 {
-                    logArchitect.DebugFormat("SMTP Library - attempting to add attachement {0}", att);
+                    if (logArchitect.IsDebugEnabled)
+                    {
+                        logArchitect.DebugFormat("SMTP Library - attempting to add attachement {0}", att);
+                    }
+                    mm.Attachments.Add(new Attachment(att));
+                    logArchitect.DebugFormat("SMTP Library - attempting to add attachments {0}", att);
                 }
-                mm.Attachments.Add(new Attachment(att));
-                logArchitect.DebugFormat("SMTP Library - attempting to add attachments {0}", att);
-            }
 
-            //Sending the Email Message and returning errors or success result
-            try
-            {
-                client.Send(mm);
-                client.Dispose();
+                //Sending the Email Message and returning errors or success result
+                try
+                {
+                    client.Send(mm);
+                    client.Dispose();
+                }
+                catch (Exception e)
+                {
+                    logArchitect.Error("SMTP Library - Send SMTP email error. ", e);
+                    client.Dispose();
+                    return e.ToString();
+                }
+                return "Message Sent Successfully";
             }
-            catch (Exception e)
-            {
-                logArchitect.Error("SMTP Library - Send SMTP email error. ", e);
-                client.Dispose();
-                return e.ToString();
-            }
-            return "Message Sent Successfully";
 
         }
 
