@@ -6,8 +6,6 @@ using System.Net.Mail;
 
 namespace Direct.SMTP.Library
 {
-
-    [DirectSealed]
     [DirectDom("SMTP")]
     [ParameterType(false)]
     public class SMTPLibrary

@@ -14,7 +14,6 @@ C:\Users\Mateusz\Source\Repos\NICE-SMTP\Direct.SMTP.Library\bin\Debug\Direct.SMT
 C:\Users\Mateusz\Source\Repos\NICE-SMTP\Direct.SMTP.Library\bin\Debug\Direct.Interface.dll
 C:\Users\Mateusz\Source\Repos\NICE-SMTP\Direct.SMTP.Library\bin\Debug\Direct.Shared.dll
 C:\Users\Mateusz\Source\Repos\NICE-SMTP\Direct.SMTP.Library\bin\Debug\log4net.dll
-C:\Users\Mateusz\Source\Repos\NICE-SMTP\Direct.SMTP.Library\bin\Debug\Microsoft.mshtml.dll
 C:\Users\Mateusz\Source\Repos\NICE-SMTP\Direct.SMTP.Library\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Mateusz\Source\Repos\NICE-SMTP\Direct.SMTP.Library\obj\Debug\Direct.SMTP.Library.csproj.AssemblyReference.cache
 C:\Users\Mateusz\Source\Repos\NICE-SMTP\Direct.SMTP.Library\obj\Debug\Direct.SMTP.Library.csproj.CoreCompileInputs.cache
