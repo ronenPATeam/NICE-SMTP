@@ -18,7 +18,7 @@ namespace Direct.SMTP.Library
         [DirectDom("Send an email using SMTP")]
         [DirectDomMethod("Send {Message}")]
         [MethodDescriptionAttribute("Send SMTP Email Message using Email message Type")]
-        public static string sendEmail(emailMessage msg)
+        public static string sendEmail(EmailMessage msg)
         {
             if (logArchitect.IsDebugEnabled)
             {
@@ -264,11 +264,11 @@ namespace Direct.SMTP.Library
             this.RecipientsCC = new DirectCollection<string>(this.Project);
             this.Attachements = new DirectCollection<string>(this.Project);
         }
-        public emailMessage()
+        public EmailMessage()
         {
             initLists();
         }
-        public emailMessage(Direct.Shared.IProject project)
+        public EmailMessage(Direct.Shared.IProject project)
             : base(project)
         {
             initLists();
