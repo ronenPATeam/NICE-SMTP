@@ -61,6 +61,18 @@ namespace Direct.SMTP.Library
                 mm.Subject = msg.Subject;
                 mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
 
+                if (msg.isHtml && msg.isSignature)
+                {
+                    string htmlBodyWithSignature = msg.Body;
+                    AlternateView htmlView = AlternateView.CreateAlternateViewFromString(htmlBodyWithSignature, null, "text/html");
+
+                    LinkedResource signatureImage = new LinkedResource(msg.signaturePath, "image/png");
+                    signatureImage.ContentId = "signature_image";
+                    htmlView.LinkedResources.Add(signatureImage);
+
+                    mm.AlternateViews.Add(htmlView);
+                }
+
                 //Adding Recipients and CC list
                 MailAddressCollection tos = new MailAddressCollection();
                 foreach (string addr in msg.Recipients)
@@ -133,6 +145,8 @@ namespace Direct.SMTP.Library
         protected PropertyHolder<bool> _isHtml = new PropertyHolder<bool>("isHtml");
         protected PropertyHolder<bool> _useDefaultCredentials = new PropertyHolder<bool>("UseDefaultCredentials");
         protected PropertyHolder<int> _sendTimeOut = new PropertyHolder<int>("sendTimeOut");
+        protected PropertyHolder<bool> _isSignature = new PropertyHolder<bool>("isSignature");
+        protected PropertyHolder<string> _signaturePath = new PropertyHolder<string>("signaturePath");
 
         //List property holder
         [DirectDomAttribute("Recipients")]
@@ -253,6 +267,20 @@ namespace Direct.SMTP.Library
         {
             get { return _sendTimeOut.TypedValue; }
             set { this._sendTimeOut.TypedValue = value; }
+        }
+
+        [DirectDom("isSignature")]
+        public bool isSignature
+        {
+            get { return _isSignature.TypedValue; }
+            set { this._isSignature.TypedValue = value; }
+        }
+
+        [DirectDom("signaturePath")]
+        public string signaturePath
+        {
+            get { return _signaturePath.TypedValue; }
+            set { this._signaturePath.TypedValue = value; }
         }
 
 
